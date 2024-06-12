@@ -1,10 +1,14 @@
-import Book;
+package org.example;
+import java.util.ArrayList;
+import java.util.Scanner;
+
 
 public class Student extends Users{
     private ArrayList<Book> borrowedBooks;
 
     public Student(ArrayList<Book> borrowedBooks) {
-        this.borrowedBooks = new ArrayList<Book>;
+
+        this.borrowedBooks = new Array<Book>[3];
     }
     //setters and getters
 
@@ -17,9 +21,6 @@ public class Student extends Users{
         this.borrowedBooks = borrowedBooks;
     }
 
-    //methods
-    public void searchBooks(){};
-    public void askForBooks(){};
-    public void returnBooks(){}
+
 
 }

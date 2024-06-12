@@ -32,7 +32,7 @@ public class Book {
         this.title = title;
     }
 
-    public boolean isAvailable() {
+    public boolean getIsAvailable() {
         return isAvailable;
     }
 
