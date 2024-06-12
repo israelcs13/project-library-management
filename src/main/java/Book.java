@@ -1,6 +1,6 @@
 public class Book {
     private String title;   // Titulo del libro
-    private String author;  //Autor del libro
+    private String author;  //Autor del librogitm
     private boolean isAvailable;  //esta disponible?
 
     //Constructor
