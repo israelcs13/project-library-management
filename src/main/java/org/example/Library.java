@@ -14,17 +14,17 @@ private ArrayList<Book> books;
         String optionSearch  = scanner.nextLine();
         switch() {
             case "T":
-                private void showTitles() {
+                private void showTitle() {
                 System.out.println("Available titles:");
                 for (Book book : books)
                     System.out.println(book.getTitle());
             }
             break;
             case "A":
-                private void showAuthors() {
+                private void showAuthor() {
                 System.out.println("Available authors:");
                 for (Book book : books)
-                    System.out.println(book.getAuthors());
+                    System.out.println(book.getAuthor());
 
                 System.out.println("Which author do you choose to see their books?");
                 String optionAuthor = scanner.nextLine();
@@ -46,7 +46,7 @@ private ArrayList<Book> books;
                 String optionGenre = scanner.nextLine();
                 System.out.println(System.out.println("Books by " + optionGenre + ":");
                 for (Book book : books) {
-                    if (book.getGenre().equalsoptionGenre()) {
+                    if (book.getGenre().equalsOptionGenre()) {
                         System.out.println(book);
                     }
                 }
