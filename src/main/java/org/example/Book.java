@@ -11,11 +11,12 @@ public class Book {
         this.author = author;
         this.isAvailable = true;
     }
+
     // constructor opcional
     public Book() {
     }
 
-     // getter and setter
+    // getter and setter
     public String getAuthor() {
         return author;
     }
@@ -37,5 +38,6 @@ public class Book {
     }
 
     public void setAvailable(boolean available) {
-     this.isAvailable = isAvailable;
+        this.isAvailable = isAvailable;
     }
+}
