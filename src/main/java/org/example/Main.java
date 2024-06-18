@@ -1,17 +1,14 @@
 package org.example;
-import java.awt.print.Book;
-import java.util.HashSet;
+import org.example.Library;
+
 import java.util.Scanner;
-
-
 
 public class Main {
     public static void main(String[] args) {
-        Admin admin = new Admin("admin");
-        Users user = new Users("Pepe");
+        Library library = new Library();
         Scanner scanner = new Scanner(System.in);
         boolean exit = false;
-        System.out.println("Welcome to the Library. Please, log in as an user or an admin");
+        System.out.println("Welcome to the Library. Please, log in as a user or an admin: ");
         String typeOfUser = scanner.nextLine();
         while (!exit) {
             switch (typeOfUser.toLowerCase()) {
@@ -29,23 +26,23 @@ public class Main {
                         String userOption = scanner.nextLine();
                         switch (userOption.toLowerCase()) {
                             case "1":
-                                admin.showAllBooks();
+                                library.showAllBooks();
                                 break;
                             case "2":
-                                admin.searchBooks();
+                                library.searchBooks();
                                 break;
                             case "3":
-                                admin.borrowBooks();
+                                library.borrowBooks();
                                 break;
                             case "4":
-                                user.checkBorrowedBooks();
+                                library.checkBorrowedBooks();
                                 break;
                             case "5":
-                                admin.returnBooks();
+                                library.returnBooks();
                                 break;
-
                             case "6":
                                 userExit = true;
+                                System.out.println("Thanks for using our library.");
                                 break;
                             default:
                                 System.out.println("Invalid operation.");
@@ -69,25 +66,25 @@ public class Main {
                         switch (adminOption.toLowerCase()) {
 
                             case "1":
-                                admin.showAllBooks();
+                                library.showAllBooks();
                                 break;
                             case "2":
-                                admin.searchBooks();
+                                library.searchBooks();
                                 break;
                             case "3":
-                                admin.borrowBooks();
+                                library.borrowBooks();
                                 break;
                             case "4":
-                                user.checkBorrowedBooks();
+                                library.checkBorrowedBooks();
                                 break;
                             case "5":
-                                admin.returnBooks();
+                                library.returnBooks();
                                 break;
                             case "6":
-                                admin.addBook();
+                                library.addBook();
                                 break;
                             case "7":
-                                admin.removeBook();
+                                library.removeBook();
                                 break;
                             case "8":
                                 adminExit = true;
@@ -102,8 +99,6 @@ public class Main {
                     System.out.println("Invalid user");
                     exit = true;
             }
-
-
         }
         scanner.close();
     }

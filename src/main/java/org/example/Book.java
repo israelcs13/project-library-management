@@ -2,21 +2,18 @@ package org.example;
 
 public class Book {
     private String title;   // Titulo del libro
-    private String author;  //Autor del librogitm
+    private String author;
+    private String genre;//Autor del librogitm
     private boolean isAvailable;  //esta disponible?
 
     //Constructor
-    public Book(String title, String author, boolean isAvailable) {
+    public Book() {
         this.title = title;
         this.author = author;
+        this.genre= genre;
         this.isAvailable = true;
     }
 
-    // constructor opcional
-    public Book() {
-    }
-
-    // getter and setter
     public String getAuthor() {
         return author;
     }
@@ -40,4 +37,13 @@ public class Book {
     public void setAvailable(boolean available) {
         this.isAvailable = isAvailable;
     }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
 }
+
