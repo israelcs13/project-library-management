@@ -3,14 +3,14 @@ import java.util.Scanner;
 
 import java.util.ArrayList;
 
-public class Admin extends Users {
+public class Library {
 
 
     private ArrayList<Book> catalog;
     private ArrayList<Book> availableBooks;
     private ArrayList<Book> lendBooks;
 
-    public Admin(String userName) {
+    public Library(String userName) {
         super();
 
         this.catalog = new ArrayList<>();
