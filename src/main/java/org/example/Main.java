@@ -88,6 +88,7 @@ public class Main {
                                 break;
                             case "8":
                                 adminExit = true;
+                                System.out.println("Thanks for using our library.");
                                 break;
                             default:
                                 System.out.println("Invalid operation.");
@@ -95,10 +96,11 @@ public class Main {
 
                     }
                     break;
-                default:
+                    default:
                     System.out.println("Invalid user");
-                    exit = true;
             }
+
+                exit = true;
         }
         scanner.close();
     }
