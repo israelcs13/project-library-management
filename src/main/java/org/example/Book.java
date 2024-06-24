@@ -7,14 +7,13 @@ public class Book {
     private boolean isAvailable;  //esta disponible?
 
     //Constructor
-    public Book(String title, String author, String genre, boolean isAvailable) {
+    public Book() {
         this.title = title;
         this.author = author;
         this.genre= genre;
         this.isAvailable = true;
     }
 
-     // getter and setter
     public String getAuthor() {
         return author;
     }
@@ -31,17 +30,20 @@ public class Book {
         this.title = title;
     }
 
-    public boolean isAvailable() {
+    public boolean getIsAvailable() {
         return isAvailable;
     }
 
     public void setAvailable(boolean available) {
-     this.isAvailable = isAvailable;
+        this.isAvailable = isAvailable;
     }
 
     public String getGenre() {
         return genre;
     }
+
     public void setGenre(String genre) {
         this.genre = genre;
     }
+}
+
